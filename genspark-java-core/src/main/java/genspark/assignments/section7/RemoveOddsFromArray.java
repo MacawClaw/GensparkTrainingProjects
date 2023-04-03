@@ -6,6 +6,7 @@ import java.util.Arrays;
 public class RemoveOddsFromArray implements Assignment {
     public int[] solution(int[] nums) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+        int[] result = Arrays.stream(nums).filter(n -> n%2 ==0).toArray();
+        return result;
     }
 }

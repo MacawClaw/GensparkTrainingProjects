@@ -5,6 +5,6 @@ import genspark.assignments.Assignment;
 public class DivideByTwo implements Assignment {
     public double solution(int num){
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return 0;
+        return num*0.5;
     }
 }

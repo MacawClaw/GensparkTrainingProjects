@@ -5,6 +5,15 @@ import genspark.assignments.Assignment;
 public class CheckingAGrade implements Assignment {
     public String solution(int grade) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+        if (grade >= 90) {
+            return "A";
+        }
+        else if (grade >= 80) {
+            return "B";
+        }
+        else if (grade >= 70) {
+            return "C";
+        }
+        return "FAILURE";
     }
 }

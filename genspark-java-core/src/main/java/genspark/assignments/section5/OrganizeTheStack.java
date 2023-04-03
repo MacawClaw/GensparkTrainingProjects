@@ -6,6 +6,17 @@ import java.util.Stack;
 public class OrganizeTheStack implements Assignment {
     public Stack<Integer> solution(Stack<Integer> stack) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+        Stack<Integer> tempStack = new Stack<>();
+        while(!stack.isEmpty()) {
+            int temp = stack.pop();
+
+            while(!tempStack.isEmpty() && tempStack.peek() < temp) {
+                stack.push(tempStack.pop());
+            }
+
+            tempStack.push(temp);
+        }
+
+        return tempStack;
     }
 }

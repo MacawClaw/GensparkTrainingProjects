@@ -5,6 +5,7 @@ import genspark.assignments.Assignment;
 public class TripleShot implements Assignment {
     public boolean solution(boolean x, boolean y, boolean z) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return true;
+        if (x == true && y == true && z == true) return true;
+        return false;
     }
 }

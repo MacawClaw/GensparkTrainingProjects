@@ -5,6 +5,10 @@ import genspark.assignments.Assignment;
 public class CounterForLoop implements Assignment {
     public String solution(int count) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+        String s = "";
+        for (int i = count; i >= 0; i--) {
+            s+= Integer.toString(i);
+        }
+        return s;
     }
 }

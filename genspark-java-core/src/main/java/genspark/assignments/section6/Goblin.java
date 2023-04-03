@@ -21,4 +21,9 @@ public class Goblin implements Assignment{
     }
 
     // ↓↓↓↓ your code goes here ↓↓↓↓
+    public Zombie attack(Zombie z) {
+        z.setHealth(z.getHealth() + this.getStrength());
+
+        return z;
+    }
 }

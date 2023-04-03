@@ -6,6 +6,10 @@ import java.util.ArrayList;
 public class LastIndexFound implements Assignment {
     public int solution(ArrayList<Integer> nums, int numToFind) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return 0;
+        if (!nums.contains(numToFind)) return -1;
+
+        int index = nums.indexOf(numToFind);
+
+        return index;
     }
 }

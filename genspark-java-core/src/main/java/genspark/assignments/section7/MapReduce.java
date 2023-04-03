@@ -6,6 +6,8 @@ import java.util.ArrayList;
 public class MapReduce implements Assignment {
     public int[] solution(ArrayList<ArrayList<Integer>> innerNums) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+        int[] result = innerNums.stream().mapToInt(innerList -> innerList.stream().reduce(Integer::sum).orElse(0)).toArray();
+
+        return result;
     }
 }

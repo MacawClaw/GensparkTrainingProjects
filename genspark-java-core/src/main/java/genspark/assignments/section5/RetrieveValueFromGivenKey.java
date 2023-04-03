@@ -6,6 +6,9 @@ import java.util.HashMap;
 public class RetrieveValueFromGivenKey implements Assignment {
     public int solution(HashMap<Integer,Integer> map, Integer value) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return 0;
+
+        if (!map.containsKey(value)) return 0;
+
+        return map.get(value);
     }
 }
